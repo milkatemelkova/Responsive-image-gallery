@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+    integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+    crossorigin="anonymous" />
+  <title>Gallery</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="images">
+
+      <a href="nature-1.jpeg"><img src="nature-1.jpeg" title="hello" alt=""></a>
+
+
+      <a href="nature-2.jpeg"><img src="nature-2.jpeg" title="hello" alt=""></a>
+
+      <a href="nature-3.jpeg"><img src="nature-3.jpeg" title="hello" alt=""></a>
+      <a href="nature-4.jpeg"><img src="nature-4.jpeg" title="hello" alt=""></a>
+      <a href="nature-10.jpg"><img src="nature-10.jpg" title="hello" alt=""></a>
+
+
+      <a href="nature-6.jpeg"><img src="nature-6.jpeg" title="hello" alt=""></a>
+
+      <a href="nature-7.jpeg"><img src="nature-7.jpeg" title="hello" alt=""></a>
+      <a href="nature-8.jpeg"><img src="nature-8.jpeg" title="hello" alt=""></a>
+      <a href="nature-9.jpeg"><img src="nature-9.jpeg" title="hello" alt=""></a>
+      <a href="nature-5.jpeg"><img src="nature-5.jpeg" title="hello" alt=""></a>
+
+    </div>
+  </div>
+  <script>
+    $(".images").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      },
+      image: {
+        titleSrc: function (item) {
+          return item.el.find('img').attr('title');
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
